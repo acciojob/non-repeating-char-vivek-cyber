@@ -9,6 +9,19 @@
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
+		let s=prompt("Enter a string");
+		let x=s.split("")
+    console.log(x)
+    li={}
+    for(i in x)
+    {
+      if(li[x[i]]==undefined)
+      {
+        li[x[i]]=0;
+      }
+    }
+    console.log(Object.keys(li)[0])
+		alert(Object.keys(li)[0])
 </script>
 
 </body>
